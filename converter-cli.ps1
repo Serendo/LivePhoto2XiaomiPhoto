@@ -211,7 +211,7 @@
 				$num = 1
 			}
 			$dirname = $filename.substring(0, $filename.lastIndexOf("\"))
-			$newfilename = "$dirname\MVIMG${dt_str}$("{0:D2}" -f $num).jpg"
+			$newfilename = "$dirname\MVIMG_${dt_str}$("{0:D2}" -f $num).jpg"
 			echo "newfilename: $newfilename"
 			echo $fff
 			cmd /c copy /b $fff "`"$newfilename`""  | Out-Null
